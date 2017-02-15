@@ -1,14 +1,15 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
+
     defaultConfig {
-        applicationId "com.lodz.android.videodemo"
         minSdkVersion 14
         targetSdkVersion 25
         versionCode 1
         versionName "1.0.1"
+
     }
     buildTypes {
         release {
@@ -19,5 +20,8 @@ android {
 }
 
 dependencies {
-    compile project(':mmsplayer')
+    compile 'cn.lodz:core:1.0.2'
+    // IJK播放器
+    compile 'tv.danmaku.ijk.media:ijkplayer-java:0.7.7.1'
+    compile 'tv.danmaku.ijk.media:ijkplayer-exo:0.7.7.1'
 }
