@@ -1,7 +1,7 @@
 package com.lodz.android.videodemo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.lodz.android.mmsplayer.contract.IVideoPlayer;
 import com.lodz.android.mmsplayer.impl.MmsVideoView;

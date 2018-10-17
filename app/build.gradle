@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 28
+
     defaultConfig {
         applicationId "com.lodz.android.videodemo"
-        minSdkVersion 14
-        targetSdkVersion 25
+        minSdkVersion 16
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0.1"
     }
@@ -23,5 +23,6 @@ android {
 }
 
 dependencies {
-    compile project(':mmsplayer')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation project(':mmsplayer')
 }
