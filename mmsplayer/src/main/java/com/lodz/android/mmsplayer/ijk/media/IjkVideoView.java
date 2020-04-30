@@ -30,6 +30,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
+import tv.danmaku.ijk.media.exo.IjkExoMediaPlayer;
 import tv.danmaku.ijk.media.player.AndroidMediaPlayer;
 import tv.danmaku.ijk.media.player.IMediaPlayer;
 import tv.danmaku.ijk.media.player.IjkMediaPlayer;
@@ -1007,9 +1008,9 @@ public class IjkVideoView extends FrameLayout implements MediaController.MediaPl
         IMediaPlayer mediaPlayer = null;
 
         switch (playerType) {
-//            case IjkPlayerSetting.PlayerType.PLAY_EXO:
-//                mediaPlayer = new IjkExoMediaPlayer(mAppContext);
-//                break;
+            case IjkPlayerSetting.PlayerType.PLAY_EXO:
+                mediaPlayer = new IjkExoMediaPlayer(mAppContext);
+                break;
             case IjkPlayerSetting.PlayerType.PALY_ANDROID_MEDIA:
                 mediaPlayer = new AndroidMediaPlayer();
                 break;
